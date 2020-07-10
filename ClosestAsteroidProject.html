@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/projectStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="navigation">
+        <div class="leftGradient">
+          <a class="linkPortfolio" href="index.html#DevPortfolioAnchor" title="Back To Portfolio"><i class="fa fa-th" aria-hidden="true" style="font-size: 55px;" ></i></a>
+          <a class="previous navArea" href="RMPASUProject.html" title="RMP ASU">
+              <i class="verticallyCentered fa fa-angle-left" style="font-size:70px; color:#757575; top: 50%; left: 0; margin-left: 50%;"></i>
+          </a>
+        </div>
+        <div class="rightGradient">
+          <a class="next navArea" href="SmashDotProject.html" title="Smash Dot">
+            <i class="verticallyCentered fa fa-angle-right" style="font-size:70px; color:#757575; top: 50%; right:0; margin-right: 50%;"></i>
+          </a>
+        </div>
+      </div>
+      <div class="page-content">
+        <div id="RMPASU" class="RMPASUSection projectSection">
+          <h1>Closest Asteroid</h1>
+          <button type="button" class="linkOutButton websiteButton" name="button" onclick="window.open('http://kirangershenfeld.dev/ClosestAsteroid.html','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Visit Website!
+          </button>
+          <button type="button" class="linkOutButton githubButton" name="button" onclick="window.open('http://github.com','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Github
+          </button>
+          <div class="projectPicture" style="margin-bottom: 75px;  text-align: center;">
+            <img style="width: 100%;" src="Images/Projects/replitSample.png" alt="">
+          </div>
+          <div class="projectDescription">
+            <h2>Project Description</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>This website shows which small astral bodies are closest to Earth today, this month, and this year. <br><br>The website queries a public NASA API to request JSON data from the JPL Small Body database. This data is then processed and a the output is displayed on the screen.</span>
+          </div>
+          <div class="technicalSheet">
+            <h2>Technical Sheet</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>These are the languages, topics, and frameworks explored in this project</span>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+          <div class="backgroundInfo">
+            <h2>Background Story</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>This project was a concentrated attempt to learn more about website development. While HTML and CSS are quite approachable, the nuances and best practices take time to learn and building this website helped me get a much better feel designing and implementing a website. It was also good practice with requesting JSON from APIs and processing data which is something that has come up in several projects of mine. </span>
+          </div>
+          <div class="bottomInfo">
+            <div style="margin-bottom: 10px;">Let's Chat!</div>
+            <span style="font-size: 15px;">Contact me at <u>kiran@gershenfeld.org</u><br></span>
+            <span style="font-size: 15px;">Link in at <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" style="color: gray;" target="_blank">linkedin.com/KiranGershenfeld</a><br></span>
+            <span style="font-size: 15px;">Find Me at <a href="https://github.com/KiranGershenfeld" style="color: gray;" target="_blank">github.com/KiranGershenfeld</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(".navArea").hover(function(){
+      $(this).find("i").css("color", "white");
+    }, function(){
+      $(this).find("i").css("color", "#757575");
+    })
+  </script>
+</html>

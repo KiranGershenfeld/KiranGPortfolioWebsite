@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/projectStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="navigation">
+        <div class="leftGradient">
+          <a class="linkPortfolio" href="index.html#DevPortfolioAnchor" title="Back To Portfolio"><i class="fa fa-th" aria-hidden="true" style="font-size: 55px;" ></i></a>
+          <a class="previous navArea" href="SmashDotProject.html" title="Smash Dot">
+              <i class="verticallyCentered fa fa-angle-left" style="font-size:70px; color:#757575; top: 50%; left: 0; margin-left: 50%;"></i>
+          </a>
+        </div>
+
+      </div>
+      <div class="page-content">
+        <div id="RMPASU" class="RMPASUSection projectSection">
+          <h1>Chord Identification</h1>
+          <button type="button" class="linkOutButton websiteButton" name="button" onclick="window.open('http://kirangershenfeld.dev/ClosestAsteroid.html','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Visit Website!
+          </button>
+          <button type="button" class="linkOutButton replitButton" name="button" onclick="window.open('http://repl.it','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Visit Website!
+          </button>
+          <button type="button" class="linkOutButton githubButton" name="button" onclick="window.open('http://github.com','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Github
+          </button>
+          <div class="projectPicture" style="margin-bottom: 75px;  text-align: center;">
+            <img style="width: 100%;" src="Images/Projects/replitSample.png" alt="">
+          </div>
+          <div class="projectDescription">
+            <h2>Project Description</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>Chord Identification takes in a list of notes and returns potential chord names for that set of notes<br><br> This progrm works with live midi input from a midi controller to return the chord being played in real time or with manual input. <br><br> The program iterates through the input list making each note the root and calculating the intervals of the other notes. These intervals are then referenced against common chord interval compositions. Any matches are then put into a dictionary and shown as output.</span>
+          </div>
+          <div class="technicalSheet">
+            <h2>Technical Sheet</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>These are the languages, topics, and frameworks explored in this project</span>
+            <ul>
+              <li>Python</li>
+              <li>Music Theory</li>
+              <li>Midi (Musical Instrument Digital Interface)</li>
+              <li>Pygame (python package)</li>
+            </ul>
+          </div>
+          <div class="backgroundInfo">
+            <h2>Background Story</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>This project is the beginning of a much larger idea that I have had for several years. I found that often when beginners start with music, they know what sounds good but not how to communicate why. The idea of the project is to help people better understand what they are playing by seeing the chords in real time. Another potential goal was to make some kind of visual display based on the notes played in relation to the key of the song (warm colors for resolved chords, harsher contrast for dissonance). There are definitely a few directions I want to explore with live music analysis so I am excited to expand this project.</span>
+          </div>
+          <div class="bottomInfo">
+            <div style="margin-bottom: 10px;">Let's Chat!</div>
+            <span style="font-size: 15px;">Contact me at <u>kiran@gershenfeld.org</u><br></span>
+            <span style="font-size: 15px;">Link in at <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" style="color: gray;" target="_blank">linkedin.com/KiranGershenfeld</a><br></span>
+            <span style="font-size: 15px;">Find Me at <a href="https://github.com/KiranGershenfeld" style="color: gray;" target="_blank">github.com/KiranGershenfeld</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(".navArea").hover(function(){
+      $(this).find("i").css("color", "white");
+    }, function(){
+      $(this).find("i").css("color", "#757575");
+    })
+  </script>
+</html>

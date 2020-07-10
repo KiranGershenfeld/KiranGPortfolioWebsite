@@ -1,0 +1,149 @@
+body{
+  margin:0;
+  background-color: black;
+}
+.content{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.leftGradient{
+  background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(247, 247, 247,1) 100%);
+  height: 100%;
+  position: fixed;
+  float: left;
+  width: 20%;
+}
+.rightGradient{
+  background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(185,185,185,1) 100%);
+  height: 100%;
+  position: fixed;
+  float: right;
+  width: 20%;
+  right: 0;
+}
+.previous{
+  float: left;
+  position: fixed;
+  width: 10%;
+  height: 50%;
+  top: 25%;
+}
+.next{
+  float: right;
+  position: fixed;
+  width: 10%;
+  height: 50%;
+  top: 25%;
+  right: 0;
+}
+.linkPortfolio{
+  float: left;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 30px;
+}
+
+.fa-th{
+  color: #757575;
+  cursor: pointer;
+
+}
+.fa-th:hover {
+    color: white;
+}
+.verticallyCentered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.linkOutButton{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px gray;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: .05em;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  transition: 250ms;
+}
+.replitButton{
+  background-color: #004ab3;
+}
+.replitButton:hover{
+  background-color: #003682;
+}
+.githubButton{
+  margin-left: 5px;
+  background-color: #136900;
+}
+.githubButton:hover{
+  background-color: #0d4201;
+}
+.websiteButton{
+  margin-left: 5px;
+  background-color: #d69700;
+}
+.websiteButton:hover{
+  background-color: #ad7a00;
+}
+
+.linkOutButton:active{
+  box-shadow: 0 2px #454545;
+  transform: translateY(4px);
+}
+
+.projectSection{
+  padding: 25px 25%;
+  min-height: 100vh;
+  text-align: left;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  font-size: 23px;
+  padding -bottom: 100px;
+  background: #f7f7f7;
+  color: #3c4e63;
+}
+
+.projectSection h1{
+  font-family: "Courier New", Courier;
+  text-align: center;
+  font-size: 75px;
+  font-weight: normal;
+  color: #363636;
+}
+
+.projectSection h2{
+  font-family: MontSerrat,Tahoma,Arial,sans-serif;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  color: #363636;
+}
+
+.technicalSheet ul{
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.bottomInfo{
+  margin-top: 160px;
+  margin-bottom: 23px;
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  bottom: 0;
+}

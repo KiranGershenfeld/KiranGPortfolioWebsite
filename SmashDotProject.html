@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/projectStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="navigation">
+        <div class="leftGradient">
+          <a class="linkPortfolio" href="index.html#DevPortfolioAnchor" title="Back To Portfolio"><i class="fa fa-th" aria-hidden="true" style="font-size: 55px;" ></i></a>
+          <a class="previous navArea" href="ClosestAsteroidProject.html" title="Closest Asteroid">
+              <i class="verticallyCentered fa fa-angle-left" style="font-size:70px; color:#757575; top: 50%; left: 0; margin-left: 50%;"></i>
+          </a>
+        </div>
+        <div class="rightGradient">
+          <a class="next navArea" href="ChordIdentificationProject.html" title="Chord Identification">
+            <i class="verticallyCentered fa fa-angle-right" style="font-size:70px; color:#757575; top: 50%; right:0; margin-right: 50%;"></i>
+          </a>
+        </div>
+      </div>
+      <div class="page-content">
+        <div id="RMPASU" class="RMPASUSection projectSection">
+          <h1>SmashDot</h1>
+          <button type="button" class="linkOutButton githubButton" name="button" onclick="window.open('http://github.com','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Github
+          </button>
+          <div class="projectPicture" style="margin-bottom: 75px;  text-align: center;">
+            <img style="width: 100%;" src="Images/Projects/replitSample.png" alt="">
+          </div>
+          <div class="projectDescription">
+            <h2>Project Description</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>SmashDot is an arcade style game built in Unity for both pc and mobile<br><br>The player's goal is to shoot the dot at a randomly placed falling dot. The score is incremented based on how many consecutive colissions the player makes. Unfortunately the computer I was using to develop the game died and I was only able to salvage old builds, not the actual project files.</span>
+          </div>
+          <div class="technicalSheet">
+            <h2>Technical Sheet</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>These are the languages, topics, and frameworks explored in this project</span>
+            <ul>
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Game Design</li>
+              <li>Full pipeline development (Project taken to deployment on TestFligt beta testing)</li>
+            </ul>
+          </div>
+          <div class="backgroundInfo">
+            <h2>Background Story</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>SmashDot was the first major project that I ever really dedicated myself to. I started the game in 10th grade and developed it for about 8-9 months that year. In that time I took it from a tiny prototype to a fleshed out game with highscores, menus, and level progression. The experience of developing this game taught me so much about Unity, game design, developing for mobile, battling Apple for developer certificates, inviting friends and family to beta testing, and countless other soft skills. </span>
+          </div>
+          <div class="bottomInfo">
+            <div style="margin-bottom: 10px;">Let's Chat!</div>
+            <span style="font-size: 15px;">Contact me at <u>kiran@gershenfeld.org</u><br></span>
+            <span style="font-size: 15px;">Link in at <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" style="color: gray;" target="_blank">linkedin.com/KiranGershenfeld</a><br></span>
+            <span style="font-size: 15px;">Find Me at <a href="https://github.com/KiranGershenfeld" style="color: gray;" target="_blank">github.com/KiranGershenfeld</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(".navArea").hover(function(){
+      $(this).find("i").css("color", "white");
+    }, function(){
+      $(this).find("i").css("color", "#757575");
+    })
+  </script>
+</html>

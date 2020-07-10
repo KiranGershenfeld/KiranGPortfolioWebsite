@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  </head>
+
+<body>
+<div class="parralax" id="parralax">
+  <div class="Splash">
+    <img src="Images/PortfolioLanding/profile2.jpg" alt="" style="border-radius: 50%;height: 200px; width: 200px;margin-bottom: 30px;"><br>
+    <span id="nameSplash">Kiran Gershenfeld.</span>
+    <span id="infoSplash" style="font-size: 30px;"><br>Student, Developer, Creator</span>
+    <div class="contact" style="margin-top: 150px;">
+      <div id="email" class="mailHidden" style="color: #9bafba; font-size: 23px; margin-bottom: 50px;">kiran@gershenfeld.org</div>
+      <div class="icon">
+        <a href="https://www.github.com/KiranGershenfeld" target='_blank'><img src="Images/PortfolioLanding/git.png" class="iconButton"></a>
+      </div>
+      <div class="icon">
+        <img class="mailIcon" src="Images/PortfolioLanding/mail.png" style="height: 40px; margin-bottom: 10%;" onclick="showEmail()">
+      </div>
+      <div class="icon">
+        <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" target='_blank'><img src="Images/PortfolioLanding/linkedin.png" class="iconButton"></a>
+      </div>
+    </div>
+  </div>
+  <div class="section" style="margin-top: 15%; padding-top: 7%;">
+    <span class="hidden"><strong>Hello!</strong></span>
+    <span class="hidden"><br><br>I am a computer science student at Arizona State University<br><br> I love to make ideas come to life <br></span>
+    <button class="hidden aboutMeButton" id="aboutMeButtonID" onClick="toggleAboutMe()">More About Me..</button>
+  </div>
+  <div id="aboutMeSection" class="aboutMeClass">
+    My adventure with programming began when I was in 9th grade. I started learning python from websites like CodeAcademy and I quickly learned enough to have my own ideas and projects in mind. [MORE WILL BE ENTERED HERE]<br><br><br>
+  </div>
+  <div class="section hidden">
+    <span class="hidden"> My experiences and knowledge are documented through the projects below</span>
+  </div>
+  <div class="hidden wrapper" style="margin-top: 15%;">
+    <a name="DevPortfolioAnchor"></a> <!--file:///C:/Code%20Stuff/Web%20Development/PortfolioMain/index.html#DevPortfolioAnchor-->
+    <h1 style="font-size: 50px;font-weight: normal; margin-bottom: 50px;">Development Portfolio</h1>
+    <span style="font-size: 25px; text-align: left;">From web design to music analysis in python these projects show my enthusiasm for bringing code into everyday life</span>
+    <ul class="hidden filterList">
+      <span style="font-size: 25px; text-align: left;">Filters:<br><br></span>
+      <li><button type="button" class="filterButton" id="all" onclick="Filter(this.id)">Show All</button></li>
+      <li><button type="button" class="filterButton" id="python" onclick="Filter(this.id)">Python</button></li>
+      <li><button type="button" class="filterButton" id="webdev" onclick="Filter(this.id)">Web Dev</button></li>
+      <li><button type="button" class="filterButton" id="ios" onclick="Filter(this.id)">IOS Mobile</button></li>
+      <li><button type="button" class="filterButton" id="game" onclick="Filter(this.id)">Games</button></li>
+    </ul>
+    <ul class="hidden projectsList">
+      <li class="all python">
+        <a href="MarkovProject.html">
+          <div class="MarkovChainsListItem imageContainer" onClick="document.getElementById('markovSection').scrollIntoView();">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">Markov Chains<br>&nbsp</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">Python</span> <span class="inProjectButtonFilters">Java</span> <span class="inProjectButtonFilters">Algorithms</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="all webdev">
+        <a href="PortfolioProject.html">
+          <div class="PortfolioListItem imageContainer">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">Portfolio Website <br>&nbsp</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">Web Dev</span> <span class="inProjectButtonFilters">HTML</span> <span class="inProjectButtonFilters">CSS</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="all python">
+        <a href="RMPASUProject.html">
+          <div class="RMPASUListItem imageContainer">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">RateMyProfessor ASU Course Lookup</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">Web Dev</span> <span class="inProjectButtonFilters">HTML</span> <span class="inProjectButtonFilters">CSS</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="all webdev">
+        <a href="ClosestAsteroidProject.html">
+          <div class="ClosesestAsteroidListItem imageContainer">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">Closest Asteroid <br>&nbsp</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">Web Dev</span> <span class="inProjectButtonFilters">HTML</span> <span class="inProjectButtonFilters">CSS</span> <span class="inProjectButtonFilters">JQuery</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="all ios game">
+        <a href="SmashDotProject.html">
+          <div class="SmashDotListItem imageContainer">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">Smash Dot<br>&nbsp</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">C#</span> <span class="inProjectButtonFilters">Unity</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="all python">
+        <a href="ChordIdentificationProject.html">
+          <div class="ChordIdentificationListItem imageContainer">
+            <div class="itemInfo">
+              <div style="padding-top: 15px;">Chord Identification<br>&nbsp</div>
+              <div style="font-size: 60%; padding-top: 10%;"> <span class="inProjectButtonFilters">Python</span> <span class="inProjectButtonFilters">Midi</span> <span class="inProjectButtonFilters">Algorithms</span> </div>
+              <div style="padding-top: 12%; font-size: 70%;">more..</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <div class="bottomInfo">
+        <div style="margin-bottom: 10px;">Let's Chat!</div>
+        <span style="font-size: 15px;">Contact me at <u>kiran@gershenfeld.org</u><br></span>
+        <span style="font-size: 15px;">Link in at <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" style="color: gray;" target="_blank"><u>linkedin.com/KiranGershenfeld</u></a><br></span>
+        <span style="font-size: 15px;">Find Me at <a href="https://github.com/KiranGershenfeld" style="color: gray;" target="_blank"><u>github.com/KiranGershenfeld</u></a></span>
+      </div>
+    </ul>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+function showEmail()
+{
+  var emailElement = document.getElementById("email");
+  emailElement.classList.add('fade-in-element');
+  emailElement.classList.remove('mailHidden');
+}
+(function() {
+  var elements;
+  var windowHeight;
+
+  function init() {
+    elements = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+  }
+
+  function checkPosition() {
+    console.log("scroll-checkposition");
+    for (var i = 0; i < elements.length; i++) {
+      var element = elements[i];
+      var positionFromTop = elements[i].getBoundingClientRect().top;
+
+      if (positionFromTop - windowHeight <= -100) {
+        if(element.id=='type') {element.classList.add('typing');}
+        else {element.classList.add('fade-in-element');}
+        element.classList.remove('hidden');
+      }
+    }
+  }
+  var parralax = document.getElementById("parralax");
+  parralax.addEventListener('scroll', checkPosition);
+  window.addEventListener('resize', init);
+  init();
+  checkPosition();
+  })();
+function Filter(filter){
+  $(".all:visible").fadeOut(350, "linear").promise().done(function(){
+    $("." + filter).fadeIn(400);
+  });
+  updateButtons(filter);
+}
+function updateButtons(filter){
+  var elements = document.querySelectorAll(".filterButton");
+  for(var i = 0; i < elements.length; i++){
+    if(elements[i].id == filter){
+      elements[i].classList.remove("filterUnselected");
+      elements[i].classList.add("filterSelected");
+    }
+    else{
+      elements[i].classList.remove("filterSelected");
+      elements[i].classList.add("filterUnselected");
+    }
+  }
+}
+var showAboutMe = false;
+function toggleAboutMe(){
+  if(showAboutMe == false){
+    document.getElementById("aboutMeButtonID").innerHTML = "Less About Me..";
+    document.getElementById("aboutMeSection").style.maxHeight = "300px";
+    showAboutMe = true;
+  }
+  else{
+    document.getElementById("aboutMeButtonID").innerHTML = "More About Me..";
+    document.getElementById("aboutMeSection").style.maxHeight = "0px";
+    showAboutMe = false;
+  }
+}
+  window.onload = function(){
+    Filter("all");
+  }
+$(".imageContainer").hover(function(){
+  console.log("hovered");
+  $(this).find(".itemInfo").css("opacity", "100%");
+}, function(){
+  $(this).find(".itemInfo").css("opacity", "0%");
+});
+$(window).resize(function(){
+  var newHeight = $(".imageContainer").width() * (9/16)
+  $(".imageContainer").height(newHeight);
+  console.log($(".imageContainer").height());
+
+  if($(window).width() < 1500){
+    $(".wrapper").css("padding-left", "10%");
+    $(".wrapper").css("padding-right", "10%");
+  }
+  else{
+    $(".wrapper").css("padding-left", "20%");
+    $(".wrapper").css("padding-right", "20%");
+  }
+});
+</script>
+</body>
+</html>

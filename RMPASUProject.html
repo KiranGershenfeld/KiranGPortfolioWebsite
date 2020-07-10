@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/projectStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="navigation">
+        <div class="leftGradient">
+          <a class="linkPortfolio" href="index.html#DevPortfolioAnchor" title="Back To Portfolio"><i class="fa fa-th" aria-hidden="true" style="font-size: 55px;" ></i></a>
+          <a class="previous navArea" href="PortfolioProject.html" title="Portfolio Project">
+              <i class="verticallyCentered fa fa-angle-left" style="font-size:70px; color:#757575; top: 50%; left: 0; margin-left: 50%;"></i>
+          </a>
+        </div>
+        <div class="rightGradient">
+          <a class="next navArea" href="ClosestAsteroidProject.html" title="Closest Asteroid">
+            <i class="verticallyCentered fa fa-angle-right" style="font-size:70px; color:#757575; top: 50%; right:0; margin-right: 50%;"></i>
+          </a>
+        </div>
+      </div>
+      <div class="page-content">
+        <div id="RMPASU" class="RMPASUSection projectSection">
+          <h1>RateMyProfessor ASU Course Lookup</h1>
+          <button type="button" class="linkOutButton replitButton" name="button" onclick="window.open('http://repl.it','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Visit Website!
+          </button>
+          <button type="button" class="linkOutButton githubButton" name="button" onclick="window.open('http://github.com','_blank')">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+            Github
+          </button>
+          <div class="projectPicture" style="margin-bottom: 75px;  text-align: center;">
+            <img style="width: 100%;" src="Images/Projects/replitSample.png" alt="">
+          </div>
+          <div class="projectDescription">
+            <h2>Project Description</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>This script takes in an ASU course (ie. 'CSE 110') and returns a summary of RateMyProfessor data for each teacher teaching that class <br><br>The program accesses a JSON version of the ASU course search website and gets a list of each teacher teaching a specific class. Those teachers are then looked up on RateMyProfessor.com and if a matching teacher is found the data is scraped and summarized in a text file as output.</span>
+          </div>
+          <div class="technicalSheet">
+            <h2>Technical Sheet</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>These are the languages, topics, and frameworks explored in this project</span>
+            <ul>
+              <li>Python</li>
+              <li>Webscraping</li>
+              <li>BeautifulSoup (python package)</li>
+              <li>JSON data</li>
+            </ul>
+          </div>
+          <div class="backgroundInfo">
+            <h2>Background Story</h2>
+            <hr style="width:40%;text-align:left;margin-left:0; border: .6px solid #3c4e63;">
+            <span>This project was built purely for my own conveience. Some classes that I needed to sign up for had upwards of 15 teachers avaliable and it became laborious to check if each teacher was on RateMyProfessor and remember who had good reviews and who didnt. I figured that I could automate it with some webscraping (A skill I was interested in developing) and I found a way to do so. This project is one I'm looking forward to expanding because it could be genuinely useful to other students.</span>
+          </div>
+          <div class="bottomInfo">
+            <div style="margin-bottom: 10px;">Let's Chat!</div>
+            <span style="font-size: 15px;">Contact me at <u>kiran@gershenfeld.org</u><br></span>
+            <span style="font-size: 15px;">Link in at <a href="https://www.linkedin.com/in/kiran-gershenfeld-417a31178/" style="color: gray;" target="_blank">linkedin.com/KiranGershenfeld</a><br></span>
+            <span style="font-size: 15px;">Find Me at <a href="https://github.com/KiranGershenfeld" style="color: gray;" target="_blank">github.com/KiranGershenfeld</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(".navArea").hover(function(){
+      $(this).find("i").css("color", "white");
+    }, function(){
+      $(this).find("i").css("color", "#757575");
+    })
+  </script>
+</html>
