@@ -35,7 +35,7 @@
     <button class="hidden aboutMeButton" id="aboutMeButtonID" onClick="toggleAboutMe()">More About Me..</button>
   </div>
   <div id="aboutMeSection" class="aboutMeClass">
-    My adventure with programming began when I was in 9th grade. I started learning python from websites like CodeAcademy and I quickly learned enough to have my own ideas and projects in mind. [MORE WILL BE ENTERED HERE]<br><br><br>
+    My adventure with programming began when I was 14 learning python on the internet. I soon found that simple lessons online were too restricted and I began to make my own ideas and projects. Every time I learned a new concept my mind would fill with new things I could do, and each one of those things lead to new concepts. This cycle has taken me through all kinds of languages, frameworks, and platforms, and I never get tired of taking an idea and making it come to life. I love music, games, and automation, and I am always seeking ways to bridge these concepts through computer science and connect the world around me to code. <br><br><br>
   </div>
   <div class="section hidden">
     <span class="hidden"> My experiences and knowledge are documented through the projects below</span>
@@ -43,7 +43,7 @@
   <div class="hidden wrapper" style="margin-top: 15%;">
     <a name="DevPortfolioAnchor"></a> <!--file:///C:/Code%20Stuff/Web%20Development/PortfolioMain/index.html#DevPortfolioAnchor-->
     <h1 style="font-size: 50px;font-weight: normal; margin-bottom: 50px;">Development Portfolio</h1>
-    <span style="font-size: 25px; text-align: left;">From web design to music analysis in python these projects show my enthusiasm for bringing code into everyday life</span>
+    <span style="font-size: 25px; text-align: left;">From <b>web design</b> to <b>realtime music analysis</b> these projects show my enthusiasm for bringing code into everyday life</span>
     <ul class="hidden filterList">
       <span style="font-size: 25px; text-align: left;">Filters:<br><br></span>
       <li><button type="button" class="filterButton" id="all" onclick="Filter(this.id)">Show All</button></li>
@@ -189,7 +189,7 @@ var showAboutMe = false;
 function toggleAboutMe(){
   if(showAboutMe == false){
     document.getElementById("aboutMeButtonID").innerHTML = "Less About Me..";
-    document.getElementById("aboutMeSection").style.maxHeight = "300px";
+    document.getElementById("aboutMeSection").style.maxHeight = "500px";
     showAboutMe = true;
   }
   else{

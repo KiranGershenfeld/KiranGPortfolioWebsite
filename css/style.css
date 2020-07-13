@@ -170,7 +170,7 @@ ul{
   display: inline-block;
   width: 44%;
   padding: 2%;
-  min-width: 400px;
+  min-width: 300px;
 }
 .projectImage{
   width: 100%;
@@ -182,6 +182,7 @@ ul{
   height: 15vw;
   width: 100%;
   background-size: cover;
+  background-position: top center;
   box-shadow: 4px 4px #363636;
   border-radius: 3px;
   display: block;
