@@ -115,7 +115,6 @@ html, body{
 .wrapper{
   color: #3c4e63;
   text-align: left;
-  margin-bottom: 10%;
   font-size: 30px;
   font-family: "Courier New", Courier;
   padding-left: 20%;
@@ -252,7 +251,7 @@ ul a{
 }
 .bottomInfo{
   margin-top: 160px;
-  margin-bottom: 23px;
+  margin-bottom: 75px;
   text-align: center;
   font-size: 20px;
   color: gray;
