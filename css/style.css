@@ -216,6 +216,7 @@ ul a{
 }
 .ClosesestAsteroidListItem{
   background-image: url("../Images/PortfolioLanding/asteroidprofile.png");
+  background-position: top left;
 }
 .RMPASUListItem{
   background-image: url("../Images/PortfolioLanding/RMPASU.png");
